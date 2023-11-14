@@ -98,7 +98,7 @@ const JobDetails = () => {
           {isLoading ? (
             <ActivityIndicator size="large" color={COLORS.primary} />
           ) : error ? (
-            <Text>Something went wrong</Text>
+            <Text>Something went wrong: {String(error)}</Text>
           ) : data.length === 0 ? (
             <Text>No data available</Text>
           ) : (
